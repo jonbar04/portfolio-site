@@ -17,7 +17,8 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
-	background: white;
+	background: gray;
+	color: white;
 	font-family: "Times New Roman", Times, serif;
 	animation: spin 300s;
 	animation-delay: 60s;
