@@ -1,0 +1,246 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+
+@font-face {
+    font-family: 'blackjack';
+    src: url("blackjack/blackjack.otf") format("opentype");
+}
+
+body {
+	
+	overflow: hidden;
+	background-color: gray;
+    background-size:contain;
+	background-attachment: scroll;
+	color: yellow;
+	/*font-family: "Times New Roman", Times, serif;*/
+}
+
+body.background {
+	background-color: black;
+	background: url("../img/sparkle.gif");
+
+}
+
+.professional {
+	font-family: 'blackjack', Times, serif;
+	color: white;
+	border: 0px;
+
+}
+
+main.professional {
+	background-color: gray;
+
+}
+p.professional {
+	text-indent: 50px;
+}
+
+button.professional {
+	border: 2px solid white;
+}
+
+.hidden {
+	display: none;
+	
+}
+
+.default {
+	font-family: cursive;
+
+}
+.scroll {
+	border-radius: 5px;
+	height: 50px;
+	overflow: clip;
+	position: relative;
+	animation: scrolling 10s infinite;
+}
+
+h1.scroll {
+	overflow: hidden;
+	position: absolute;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+}
+
+@keyframes scrolling {
+  0%  {transform: translateX(80%);}
+  100% {transform: translateX(-75%);}
+	
+}
+
+header.default {
+	background:blue;
+	color: white;
+	padding: 20px;
+	border: 5px solid yellow;
+}
+
+header {
+	background:black;
+	color: white;
+	padding: 20px;
+	border: 3px solid white;
+	font-family: 'blackjack', Times, serif;
+
+}
+
+footer {
+	background:black;
+	color: white;
+	padding: 20px;
+	border: 3px solid white;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	font-family: 'blackjack', Times, serif;
+
+
+}
+
+footer.default {
+	bottom: 0;
+	background:blue;
+	color: white;
+	padding: 20px;
+	border: 5px solid yellow;
+	text-align: left;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+}
+
+.copyright {
+	text-align: left;
+}
+
+h1 {
+	margin-top:0px;
+}
+
+main {
+	padding: 5px;
+}
+
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+  margin: 0px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+button {
+	background-color: black;
+	color:white;
+	text-align: center;
+	font-size: 16px;
+	border: 2px;
+}
+
+.silly {
+	background-color: blue;
+	color:cyan;
+	text-align: center;
+	font-size: 16px;
+	border: 2px solid white;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+#container {
+	border:1px solid black;
+	width: 725px;
+	margin: auto;
+}
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+#container {
+	width: 950px;
+}	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+

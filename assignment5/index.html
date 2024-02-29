@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jonny's Website!</title>	
+	<link rel="stylesheet" href="css/style.css">		
+</head>
+
+<body class="background">
+
+	<header class="hidden">
+	<div>
+	<h1>About Jonathan Barraza</h1>	
+	</div>
+
+	</header>
+
+	<header class="default">	
+	<div>
+	<h1>Welcome to <b><u>MY</b></u> website!</h1>
+	<div class="scroll">
+	<h1>Wanna know more about me?</h1>
+	</div>
+	</div>
+	
+	</header>
+	<main>
+	
+	<div class="hidden">	
+	<h2 class="professional">Welcome to my short biography!</h2>
+	<p class="professional">Jonathan Barraza is a student at Columbia College Chicago. Majoring in programming, and being a freshman at the time of this website's creation. Graduated from Kankakee High School in 2022, graduating from Columbia in 2027.<br>Skills include:</p>
+	<ul class="professional">
+		<li>C&#35;</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>jQuery</li>
+	</ul>
+	</div>
+		
+	<div class="default">
+	<h1>Fun facts about me!</h1>
+	  <ul>
+        <li>I was born in Chicago</li>
+		<li>I&#39;m the oldest in my family</li>
+		<li>I have a pet dog</li>
+		<li>I&#39;m almost&#42; caught up on One Piece</li>
+		<li>I play the piano</li>
+		<li>It&#39;s really basic &#x28;and zoomed in because it was tiny&#x29; but I actually made the background animation of this website!</li>
+	</ul>
+	<p>If fun facts aren&#39;t enough for you, let me dump whatever comes to mind about myself! Some of my biggest interests are Touhou, One Piece, and Persona! I actually recently beat Persona 3 Reload, and oh my god I have been waiting for that game for so long I&#39;m so glad it was so good!! Please check that game out if you have &#0036;70 &#x28;unfortunately&#x29; to spare or game pass! Persona 3 is one of my favorite games of all time and Reload is one of the best remakes I&#39;ve seen in a while! Please try your hardest to avoid spoilers if possible, I played the game back in 2019 completely blind and it was actually life&#x2010;changing.</p>
+	<br>
+	<p>&#42;almost meaning still 200 episodes away from being caught up T&#95;T</p>
+	<button class="professional" id="button1">Lock in</button>
+	</div>
+	
+	<div class="hidden">
+		<button class="silly" id="button2">Let loose</button>
+	</div>
+	</main>
+
+	<footer class="default">
+	<br>
+	<div class="copyright">
+	&#169; Jonathan Barraza,2024
+	</div>
+	</footer>
+
+	<footer class="hidden">
+	<br>
+	<div class="copyright">
+	&#169; Jonathan Barraza,2024
+	</div>
+	</footer>
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+  $(document).ready(function(){
+  $("button").click(function(){
+   $(".hidden, .default").toggle()
+   $("header, footer, div, main").toggleClass(".professional");
+	});
+	
+	$("#button1").click(function(){
+		$("body").css("background", "gray"); 
+	});
+	
+	
+	$("#button2").click(function(){
+	   $("body").css("background", 'url("img/sparkle.gif")'); 
+	});
+	
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 
