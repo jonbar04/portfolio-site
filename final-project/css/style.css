@@ -1,0 +1,274 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+@font-face {
+    font-family: 'Forte';
+    src: url("FORTE.ttf") format("truetype");
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+.banner {
+	width: 100%;
+	height: 300px;
+	margin: auto;
+	display: block;
+}
+
+body {
+	 background: #e0e9ff;	 
+	color: white;
+		margin-bottom: 50px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+	color:  #c77ade;
+	
+}
+li a:hover {
+  background-color: #111;
+}
+
+.heading {
+	background: #70b0ff;
+	width: 30%;
+	border: 2px solid black;
+}
+	
+.cellheading {
+	background: #70b0ff;
+	border: 2px solid black;
+}
+
+.section {
+	background: #70b0ff;
+	margin: auto;
+	border: 3px solid black;
+	width: 90%;
+}
+
+
+#container {
+	width:90%;
+	margin:auto;
+}
+
+h1 {
+	color: black;
+	 font-family: "Forte", cursive;
+	 font-size: 40px;
+}
+
+h2 {
+	color: black;
+	 font-family: "Forte", cursive;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #696969;
+	color: white;
+	text-align: right;
+}
+
+figure {
+	margin:0px;
+}
+
+figure img {
+	width:100%;
+}
+
+.logo {
+	width: 50px;
+	float: left;	
+}
+nav section {
+	border:1px solid black;
+	margin-bottom: 15px;
+}
+
+
+.topnav {
+	position: fixed;
+	bottom: 1;
+	left: 0;
+	width: 100%;
+  overflow: hidden;
+  background-color: #70b0ff;
+}
+
+.hidden {
+	display: none;
+	
+}
+/* Style navigation menu links */
+.topnav a {
+	color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: gray;
+}
+
+
+
+.mobile {
+	
+}
+
+.desktop {
+	
+}
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 300px) {
+.mobile {
+	display: block;
+	
+}
+
+.desktop {
+	display:none;
+	
+}
+	
+	
+	
+	
+} /* closes 481px+ */
+/* Minimum width for iPads and tablets.  */
+
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	#container {
+		width:80%;
+	}
+		
+	.mobile {
+	display: none;
+	
+}
+
+.desktop {
+	display:block;
+	
+}
+
+nav {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 15px;
+}
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+nav {
+	grid-template-columns: repeat(3,1fr);
+}
+} /* closes 1024px+ */
+
+
+
+
+
