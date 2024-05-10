@@ -14,8 +14,8 @@ html {
 }
 
 @font-face {
-    font-family: 'FORTE';
-    src: url("FORTE.TTF") format("truetype");
+    font-family: 'Forte';
+    src: url("Forte/Forte.ttf") format("truetype");
 }
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
@@ -155,13 +155,13 @@ background-size: 100% 1.2em;
 
 h1 {
 	color: black;
-	 font-family: "FORTE", cursive;
+	 font-family: "Forte", "Brush Script MT", cursive;
 	 font-size: 40px;
 }
 
 h2 {
 	color: black;
-	 font-family: "FORTE", cursive;
+	 font-family: "Forte", "Brush Script MT", cursive;
 }
 
 footer {
