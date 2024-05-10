@@ -124,6 +124,7 @@ background-size: 100% 1.2em;
 
 
 .cellheading {
+	margin-left: 25px;
 	background: #70b0ff;
 	border: 2px solid black;
 }
