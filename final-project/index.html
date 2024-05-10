@@ -14,7 +14,7 @@ body {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>Embodied Memories - Home</title>
+	<title>Embodied Memories &#45; Home</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 	<link rel="stylesheet" href="css/style.css">	
 	
@@ -39,7 +39,7 @@ body {
 <ul>
 	<li><a href="index.html"><b>Home</b></a></li>
 	<li><a href="interviews.html">Interviews</a></li>
-	<li><a href="interviews.html">Analysis</a></li>
+	<li><a href="analysis.html">Analysis</a></li>
 </ul>
 
 </div>
@@ -48,36 +48,43 @@ body {
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="active">Embodied Memories</a>
+<img class="logo" src="img/logo-text.png" alt="site logo">
+<a href="#home" class="active">Embodied Memories</a>
+
   <!-- Navigation links (hidden by default) -->
-  <div class="hidden">
-    <a href="index.html">News</a>
-    <a href="interviews.html">Contact</a>
-    <a href="interviews.html">About</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+<ul>
+	<li><a href="index.html"><b>Home</b></a></li>
+	<li><a href="interviews.html">Interviews</a></li>
+	<li><a href="interviews.html">Analysis</a></li>
+</ul>
 </div>
 
 </div>
 </header>
 
 
+<div class="mobile">
+<br><br><br><br>
+</div>
+
 <main>
 <img src="img/Aging.png" class="banner" alt="website banner">
 <br>
 
-<div class="section">
-<h1>About us </h1>
-<p>Our mission is to identify the personal relationship people can build with inanimate objects. Whether it's a childhood toy, or something you've built over the years.<br><br>
-As someone who personally identifiers as a collector, I wanted to look into the minds of like-minded people, and see what it is that makes our brain work this way.<br><br>
 
+<div class="paper">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About us </h1>
+<p>Our mission is to identify the personal relationship people can build with inanimate objects. Whether it&apos;s a childhood toy&comma; or something you&apos;ve built over the years.<br><br>
+As someone who personally identifiers as a collector&comma; I wanted to look into the minds of like-minded people&comma; and see what it is that makes our brain work this way.<br><br>
+Three people were interviewed as research for the data on this website&comma; and I&apos;d like to give them my thanks for giving me their time. So thank you to Alexander Muniz&comma; Roman Hunter&comma; and Gabriel Mendez.
 </p>
+</div>
+
 
 </div>
 
+<br>
+<br>
 <br>
 
 </main>
@@ -97,11 +104,49 @@ As someone who personally identifiers as a collector, I wanted to look into the 
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
 $(document).ready(function() {
-$(".fa fa-bars").click(function(){
-   $(".hidden").toggle()
+
+$(window).scroll(function() {
+
+var windowPosition = $(window).scrollTop();
 
 
+/*
+if(windowPosition>1000) {
+	$('section').css('background','red');
+	} else {
+	$('section').css('background','black');
+
+	
+
+}//close if/else conditional
+*/
+
+if (windowPosition>3000) {
+$('body').addClass('dark');
+	}else {
+$('body').removeClass('dark');
+	}
+
+var elementOffset = $('#one').offset().top
+var currentElementOffset = (elementOffset - windowPosition);
+
+if (currentElementOffset<120) {
+	$('section').addClass('rancho');
+} else {
+	$('section').removeClass('rancho');
 }
+
+
+
+if (windowPosition>1000) {
+$('section').addClass('plushies');
+	}else {
+$('section').removeClass('plushies');
+	}
+
+	
+}); //close .scroll()
+
 
 }); //close .ready()
 </script>

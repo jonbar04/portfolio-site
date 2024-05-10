@@ -18,7 +18,6 @@ html {
     src: url("FORTE.ttf") format("truetype");
 }
 
-
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 .banner {
@@ -33,6 +32,12 @@ body {
 	color: white;
 		margin-bottom: 50px;
 
+}
+
+.navbar {
+	
+	
+	
 }
 
 ul {
@@ -54,6 +59,14 @@ li a {
   text-decoration: none;
 }
 
+
+h2 a {
+	color:  white;
+
+	
+	
+	
+}
 a {
 	color:  #c77ade;
 	
@@ -62,12 +75,54 @@ li a:hover {
   background-color: #111;
 }
 
+.paper {
+	
+	margin: auto;
+	border: 3px solid black;
+	width: 90%;
+	background-color: #f2eecb;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
+
+.paper p {
+	margin-left: 82px;
+	color: black;
+	
+}
 .heading {
 	background: #70b0ff;
-	width: 30%;
 	border: 2px solid black;
 }
-	
+
+.polaroid {
+	width: 250px;
+	height: 300px;
+	background-color: white;
+	display: table;
+	border: 5px solid black;
+	margin: 0 auto;
+	transition: transform 1s ease-in-out;
+}
+
+.polaroid img {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 3px solid black;
+	display:block;
+}
+
+.polaroid:hover{
+	transform: rotate(15deg);	
+}
+
+
 .cellheading {
 	background: #70b0ff;
 	border: 2px solid black;
@@ -86,6 +141,18 @@ li a:hover {
 	margin:auto;
 }
 
+#div1 {	
+	display:none;
+}
+
+#div2 {	
+	display:none;
+}
+
+#div3 {	
+	display:none;
+}
+
 h1 {
 	color: black;
 	 font-family: "Forte", cursive;
@@ -102,7 +169,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: #696969;
+	background: #70b0ff;
 	color: white;
 	text-align: right;
 }
@@ -266,6 +333,23 @@ nav {
 nav {
 	grid-template-columns: repeat(3,1fr);
 }
+
+
+	
+.cellheading {
+	background: #70b0ff;
+	width: 30%;
+	border: 2px solid black;
+}
+
+
+.heading {
+	background: #70b0ff;
+	border: 2px solid black;
+
+
+}
+
 } /* closes 1024px+ */
 
 
