@@ -15,7 +15,7 @@ html {
 
 @font-face {
     font-family: 'FORTE';
-    src: url("FORTE.ttf") format("truetype");
+    src: url("FORTE.TTF") format("truetype");
 }
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
