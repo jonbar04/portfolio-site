@@ -14,7 +14,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Forte';
+    font-family: 'FORTE';
     src: url("FORTE.ttf") format("truetype");
 }
 
@@ -155,13 +155,13 @@ background-size: 100% 1.2em;
 
 h1 {
 	color: black;
-	 font-family: "Forte", cursive;
+	 font-family: "FORTE", cursive;
 	 font-size: 40px;
 }
 
 h2 {
 	color: black;
-	 font-family: "Forte", cursive;
+	 font-family: "FORTE", cursive;
 }
 
 footer {
